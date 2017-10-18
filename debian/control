@@ -1,0 +1,12 @@
+Source: ros-indigo-fcl-catkin
+Section: misc
+Priority: extra
+Maintainer: Wolfgang Merkt <w.merkt+oss@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libccd-dev, ros-indigo-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-fcl-catkin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libccd-dev
+Description: fcl_catkin
