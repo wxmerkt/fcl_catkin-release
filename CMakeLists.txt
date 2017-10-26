@@ -1,23 +1,25 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(fcl_catkin)
 
+find_package(catkin REQUIRED)
 include(ExternalProject)
 
 file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include/${PROJECT_NAME}/fcl/)
 ExternalProject_Add(fcl_src
-  GIT_REPOSITORY https://github.com/wxmerkt/fcl.git
-  GIT_TAG aca750433c6e694be29b141cf5b411324b2a6b24
+  # GIT_REPOSITORY https://github.com/wxmerkt/fcl.git
+  # GIT_TAG aca750433c6e694be29b141cf5b411324b2a6b24
+  URL https://github.com/wxmerkt/fcl/archive/master.zip
+  URL_MD5 7331834d61a115f7a0e13e9833777b18
   UPDATE_COMMAND ""
   CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${PROJECT_BINARY_DIR}/install -FCL_BUILD_TESTS:BOOL=OFF #-DFCL_USE_HOST_NATIVE_ARCH:BOOL=ON
 )
 
 ExternalProject_Add_Step(fcl_src CopyToDevel
-    COMMAND ${CMAKE_COMMAND} -E copy_directory ${PROJECT_BINARY_DIR}/install/include/fcl ${CATKIN_DEVEL_PREFIX}/include/${PROJECT_NAME}/fcl
-    COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_BINARY_DIR}/install/lib/libfcl.so.0.6.0 ${CATKIN_DEVEL_PREFIX}/lib/libfcl.so.0.6
-    DEPENDEES install
+  COMMAND ${CMAKE_COMMAND} -E copy_directory ${PROJECT_BINARY_DIR}/install/include/fcl ${CATKIN_DEVEL_PREFIX}/include/${PROJECT_NAME}/fcl
+  COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_BINARY_DIR}/install/lib/libfcl.so.0.6.0 ${CATKIN_DEVEL_PREFIX}/lib/libfcl.so.0.6
+  DEPENDEES install
 )
 
-find_package(catkin REQUIRED)
 
 file(MAKE_DIRECTORY include/${PROJECT_NAME})
 file(MAKE_DIRECTORY ${CMAKE_INSTALL_PREFIX}/include/${PROJECT_NAME})
