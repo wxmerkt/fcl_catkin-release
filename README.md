@@ -1,3 +1,26 @@
+## fcl_catkin (kinetic) - 0.5.95-0
+
+The packages in the `fcl_catkin` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic fcl_catkin` on `Thu, 06 Dec 2018 19:54:45 -0000`
+
+The `fcl_catkin` package was released.
+
+Version of package(s) in repository `fcl_catkin`:
+
+- upstream repository: https://github.com/wxmerkt/fcl_catkin.git
+- release repository: https://github.com/wxmerkt/fcl_catkin-release.git
+- rosdistro version: `0.5.94-2`
+- old version: `0.5.94-2`
+- new version: `0.5.95-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.9`
+- catkin_pkg version: `0.4.9`
+- rosdep version: `0.13.0`
+- rosdistro version: `0.7.0`
+- vcstools version: `0.1.40`
+
+
 ## fcl_catkin (melodic) - 0.5.95-0
 
 The packages in the `fcl_catkin` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --rosdistro melodic --track melodic fcl_catkin` on `Thu, 06 Dec 2018 19:51:39 -0000`
