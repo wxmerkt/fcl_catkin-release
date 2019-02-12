@@ -1,0 +1,12 @@
+Source: ros-melodic-fcl-catkin
+Section: misc
+Priority: extra
+Maintainer: Wolfgang Merkt <w.merkt+oss@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libccd-dev, libeigen3-dev, ros-melodic-catkin, ros-melodic-octomap
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-fcl-catkin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libccd-dev, libeigen3-dev, ros-melodic-octomap
+Description: fcl_catkin
