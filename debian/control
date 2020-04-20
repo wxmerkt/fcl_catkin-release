@@ -1,0 +1,12 @@
+Source: ros-kinetic-fcl-catkin
+Section: misc
+Priority: optional
+Maintainer: Wolfgang Merkt <w.merkt+oss@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libccd-dev, libeigen3-dev, ros-kinetic-catkin, ros-kinetic-octomap
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-fcl-catkin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libccd-dev, libeigen3-dev, ros-kinetic-octomap
+Description: fcl_catkin
