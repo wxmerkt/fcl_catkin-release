@@ -1,3 +1,26 @@
+## fcl_catkin (noetic) - 0.6.1-1
+
+The packages in the `fcl_catkin` repository were released into the `noetic` distro by running `/home/wxm/.local/bin/bloom-release -r noetic fcl_catkin` on `Fri, 22 May 2020 18:44:12 -0000`
+
+The `fcl_catkin` package was released.
+
+Version of package(s) in repository `fcl_catkin`:
+
+- upstream repository: https://github.com/wxmerkt/fcl_catkin.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.6.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.3`
+- catkin_pkg version: `0.4.16`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.42`
+
+
 ## fcl_catkin (melodic) - 0.6.1-2
 
 The packages in the `fcl_catkin` repository were released into the `melodic` distro by running `/home/wxm/.local/bin/bloom-release fcl_catkin -r melodic` on `Mon, 20 Apr 2020 16:42:09 -0000`
